@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "integer",
+      "description": "Current page number"
+    },
+    "per_page": {
+      "type": "integer",
+      "description": "Number of users per page"
+    },
+    "total": {
+      "type": "integer",
+      "description": "Total number of users"
+    },
+    "total_pages": {
+      "type": "integer",
+      "description": "Total number of pages"
+    },
+    "data": {
+      "type": "array",
+      "description": "List of users",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "User ID"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "User email address"
+          },
+          "first_name": {
+            "type": "string",
+            "description": "User's first name"
+          },
+          "last_name": {
+            "type": "string",
+            "description": "User's last name"
+          },
+          "avatar": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to user's avatar image"
+          }
+        },
+        "required": ["id", "email", "first_name", "last_name", "avatar"]
+      }
+    }
+  },
+  "required": ["page", "per_page", "total", "total_pages", "data"]
+}
