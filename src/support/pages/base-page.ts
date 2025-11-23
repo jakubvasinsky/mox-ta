@@ -1,7 +1,5 @@
-import { expect, type Locator, type Page, type Response } from '@playwright/test';
+import { type Page } from '@playwright/test';
 import { test } from '../../tests/frontend/fixtures.js';
-import { allure } from 'allure-playwright';
-import fs from 'fs';
 
 export class BasePage {
   readonly page: Page;
