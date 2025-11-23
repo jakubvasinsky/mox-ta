@@ -6,7 +6,7 @@
     "compile:watch": "tsc -p tsconfig.json --noEmit -w",
     "compile": "tsc --incremental -p tsconfig.json",
     "test:win-ta-be": "mocha \"./src/tests/backend/**/*.spec.ts\" -t 120000",
-    "test:win-ta-fe": "playwright test tests/frontend/functional --config=src/configuration/playwright.config.ts --headed",
+    "test:win-ta-fe": "playwright test tests/frontend/functional --config=src/configuration/playwright.config.ts",
     "allure-report": "allure generate ./allure-results -c && allure open",
     "allure:generate": "npx allure generate ./allure-results --clean",
     "format:all": "npx prettier \"src/**/*{.ts,.js,.json}\" --write"
