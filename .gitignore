@@ -1,0 +1,33 @@
+﻿# IDE files
+.vs/
+.idea/
+.cache
+
+# Build results
+[Bb]uild/
+[Ll]ib/
+[Dd]ist/
+[Tt]est-out/
+*.tsbuildinfo
+
+# Dependency directories
+node_modules/
+
+# User-specific files
+*.html
+
+# Configuration
+.env
+
+# Test generated files
+.auth
+download/
+coverage/
+results/
+reports/
+downloads/
+allure-results/
+allure-report/
+test-results/
+playwright-report/
+playwright/

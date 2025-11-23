@@ -1,0 +1,11 @@
+{
+  "reporterEnabled": "allure-mocha, list, mocha-junit-reporter",
+  "allureMochaReporterOptions": {
+    "resultsDir": "./allure-results"
+  },
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": "./test-results/BE_JUnit_Test_Report.xml",
+    "includePending": true,
+    "rootSuiteTitle": "Backend_Test_Report"
+  }
+}
